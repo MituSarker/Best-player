@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="conatiner bg-black w-100">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-3">
+          <img
+            id="ambape"
+            class="img-fluid ms-n1"
+            src="images/Group 12.png"
+            alt=""
+          />
+        </div>
+        <div class="col-lg-7">
+          <h1 class="text-danger mt-5">Select your best five</h1>
+          <img class="header-sign" src="images/Line Marker.png" alt="" />
+          <p class="text-white-50">
+            Here we have some players, You can choose anyone from there. per
+            person the cost will be 1000 dolar only . just emagein you can buy
+            massi only 1000 dolar !!
+          </p>
+        </div>
+        <div class="col-lg-2">Column</div>
+      </div>
+    </div>
+  </header>
+    
+  <main class="container">
+    <section>
+      <div class="row mt-5 mb-4">
+        <div class="col-lg-8 text-white-50">
+          <div class="row g-3">
+            <div class="col-lg-4">
+              <div class="card bg-black text-center" style="">
+                <img
+                  src="images/Rectangle 144-1.png"
+                  class="card-img-top img-fluid w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Vítor Machado</p>
+                  <button id="btn-machado" class="btn btn-primary px-5">
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card bg-black text-center" style="">
+                <img
+                  src="images/Rectangle 144-2.png"
+                  class="card-img-top img-fluid w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Neymar Jr</p>
+                  <button id="btn-neymer" class="btn btn-primary px-5">
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card bg-black text-center" style="">
+                <img
+                  src="images/Rectangle 144-3.png"
+                  class="card-img-top img-fluid w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Sergio Ramos</p>
+                  <button id="btn-ramos" class="btn btn-primary px-5">
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card bg-black text-center" style="">
+                <img
+                  src="images/Rectangle 144-4.png"
+                  class="card-img-top img-fluid w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Kylian Mbappé</p>
+                  <button id="btn-mbappe" class="btn btn-primary px-5">
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card bg-black text-center" style="">
+                <img
+                  src="images/Rectangle 144-5.png"
+                  class="card-img-top img-fluid w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <p class="card-text">Renato Sanches</p>
+                  <button id="btn-renato" class="btn btn-primary px-5">
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4">
+              <div class="card bg-black text-center" style="">
+                <img
+                  src="images/Rectangle 144.png"
+                  class="card-img-top img-fluid w-100"
+                  alt="..."
+                />
+                <div class="card-body text-center">
+                  <p class="card-text">Lionel Messi</p>
+                  <button id="btn-messi" class="btn btn-primary px-5">
+                    SELECT
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  select section and Budget section  -->
+        <div class="col-lg-4 text-white">
+          <div class="select-section bg-black rounded-3">
+            <h3 class="text-center">Selected-Players</h3>
+            <img
+              class="section-icon"
+              src="images/Ureg-Ureg Marker.png"
+              alt=""
+            />
+            <ol id="player-list"></ol>
+          </div>
+          <div class="budget-section bg-black text-center rounded-3">
+            <h3 class="text-center">Per Player</h3>
+            <img
+              class="section-icon"
+              src="images/Ureg-Ureg Marker.png"
+              alt=""
+            />
+            <div class="per-player-budget d-flex justify-content-around m-2">
+              <h6 class="text-white-50">Per Player</h6>
+              <input
+                id="per-player-amount"
+                class="bg-black text-white-50 border-white"
+                type="text"
+              />
+            </div>
+            <button id="btn-calculate" class="btn btn-primary px-5">
+              Calculate
+            </button>
+            <div class="per-player-budget d-flex justify-content-around m-2">
+              <h6 class="text-white-50">Player Expenses</h6>
+              <h5 id="player-total-expenses" class="text-white-50">$00</h5>
+            </div>
+            <div class="per-player-budget d-flex justify-content-around m-2">
+              <h6 class="text-white-50">Manager</h6>
+              <input
+                id="manager-amount"
+                class="bg-black text-white-50 border-white"
+                type="text"
+              />
+            </div>
+            <div class="per-player-budget d-flex justify-content-around m-2">
+              <h6 class="text-white-50">Coach</h6>
+              <input
+                id="coach-amount"
+                class="bg-black text-white-50 border-white"
+                type="text"
+              />
+            </div>
+            <button id="btn-calculate-total" class="btn btn-primary px-5">
+              Calculate Total
+            </button>
+            <div class="per-player-budget d-flex justify-content-around m-2">
+              <h6 class="text-white-50">Total Cost</h6>
+              <h5 id="total-cost" class="text-danger">$<span>100</span></h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-black w-100 h-100 p-4">
+    <hr />
+    <h6 class="text-white text-center">copyright 2022</h6>
+  </footer>
+  <script src="utility.js"></script>
+  <script src="player.js"></script>
+  <script src="clickFunction.js"></script>
+  <script src="total.js"></script>
+  <script src="Totalcost.js"></script>
+      
+
+
+</body>
+</html>

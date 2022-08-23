@@ -1,0 +1,21 @@
+#ambape {
+    margin-left: -86px;
+    margin-bottom: -12px;
+  }
+  
+  .body-background {
+    background-color: #434343;
+  }
+  .header-sign {
+    margin-left: 350px;
+  }
+  
+  .footer-section {
+    height: 150px;
+  }
+  hr {
+    border: 1px solid;
+  }
+  .section-icon {
+    margin-left: 80px;
+  }
